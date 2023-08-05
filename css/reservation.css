@@ -1,0 +1,115 @@
+#reservation-page {
+    padding: 20px;
+}
+  
+#reservation-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.close-btn {
+    text-decoration: none;
+    color: #362d27;
+    text-align: right;
+}
+  
+form {
+    max-width: 95%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+label,
+input,
+select,
+textarea {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+}
+  
+label {
+    font-weight: bold;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #c5bfb3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+}
+
+  
+input[type="submit"] {
+    background-color: #5e4939;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: #4a382b;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-opt {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.radio-opt input {
+    margin-right: 5px;
+}
+
+.radio-option label {
+    margin-left: 5px;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-option input {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    transform: scale(1.5);
+}
+
+.checkbox-option label {
+    margin-left: 5px;
+}
+  
+#message {
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

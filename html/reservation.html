@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation | VhoTel</title>
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/reservation.css" />
+  </head>
+  <body id="reservation-page">
+    <a class="close-btn" href="home.html"> &larr; Back To Home</a>
+    <h1 id="book-headline">Book Your Stay</h1>
+
+    <form id="reservationForm">
+      <div class="form-row">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+      </div>
+
+      <div class="form-row">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" />
+
+        <label for="gender">Gender: </label>
+        <div class="radio-group">
+          <div class="radio-opt">
+            <input type="radio" name="gender-input" id="male" />
+            <label for="male">Male</label>
+          </div>
+          <div class="radio-opt">
+            <input type="radio" name="gender-input" id="female" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" />
+      </div>
+
+      <div class="form-row">
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" />
+
+        <label for="roomType">Room Type:</label>
+        <select id="roomType">
+          <option value="">-- Select Room Type --</option>
+          <option value="single">1 Beds Room</option>
+          <option value="double">2 Beds Room</option>
+          <option value="suite">Luxurious Suite</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="comments">Additional Comments:</label>
+        <textarea
+          id="comments"
+          rows="4"
+          placeholder='(This part is optional) 
+Example Question: "Could you prepare an extra mattress for the room, please?"'
+        ></textarea>
+
+        <div class="checkbox-option">
+          <input type="checkbox" name="agreement" id="agreement" />
+          <label for="agreement"
+            >I agree to the <a href="#">Terms and Conditions</a></label
+          >
+        </div>
+      </div>
+
+      <input type="submit" value="Submit" />
+      <p id="message"></p>
+    </form>
+
+    <script src="../js/validation.js"></script>
+  </body>
+</html>
