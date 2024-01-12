@@ -209,6 +209,7 @@ h4, h5, h6 {
 
 .learn-more-btn {
   display: block;
+  align-self: center;
   text-align: center;
   padding: 10px 20px;
   width: 150px;
